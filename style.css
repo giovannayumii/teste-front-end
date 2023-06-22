@@ -1,0 +1,146 @@
+body{
+    background-color: #f2ebe3;
+}
+.container{
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.desktop{
+    /* deixar texto (p,h1,spnan) ao lado da img */
+    width:300px;
+    float:left;
+    /* margin-right: 50px; */
+    border-radius: 20px 0 0 20px;
+    object-fit: cover
+}
+.mobile{
+    display: none;
+}
+
+.product{
+    background-color: #fff;
+    border-radius:25px;
+    display: flex;
+}
+.product-details{
+    padding: 2rem;
+
+}
+/* div price para conseguir ficar na mesma linha e o segundo texto no final */
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+
+p{
+    font-family:'Fraunces';
+    font-style: normal;
+    font-size:24px;
+    color: #3c8067;
+    /* display: inline-block; */
+}
+h1{
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-size:24px;
+    color:#1c232b;
+    width: 200px;
+    line-height: 35px;
+}
+.descricao{
+    width: 250px;
+    line-height: 22px;
+}
+span{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size:14px;
+    color:#6c7289;
+    width: 250px;
+    line-height: 22px;
+}
+p.oldprice{
+    text-decoration: line-through;/* deixar linha no meio do texto*/
+    color:#6c7289;
+    font-size: 14px;
+    /* display: inline-block; */
+    margin-top: 30px;;
+}
+
+button{
+    margin-top: 50px;
+	background-color: #3c8067;
+    /* border-bottom: #3c8067; */
+    border:#3c8067;
+    color:#fff;
+	padding:10px;
+    border-radius:5px;
+    width: 225px;
+    height: 3rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+button:hover{
+    background-color:#194131;
+}
+button .cart{
+    width:30px;
+    margin-right: 1rem;
+    background-color: #3c8067;
+}
+.cart:hover{
+    background-color:#194131;
+}
+
+@media (max-width:768px){
+ 
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        width: 330px;
+        height:180px;
+        border-radius: 25px 25px 0 0;
+        display:flex;
+    }
+    
+    .product{
+        background-color: #fff;
+        display: flex;
+        flex-direction: column; /* para não ficar um do lado do outro e simembaixo da img container*/
+    }
+    .product-details{
+        width: 100px;
+        height:310px;
+    }
+   
+    h1{
+        width: 250px;
+        line-height: 22px;
+
+    }
+    .descricao{
+        width: 280px;
+        line-height: 22px;
+    }
+   
+    button{
+        margin-top: 10px;
+        margin-left: 1rem;
+
+    }
+    button .cart{
+        width:22px;
+        margin-right: 0.5rem;
+        background-color: #3c8067;
+    }
+}
+
+
+
+
